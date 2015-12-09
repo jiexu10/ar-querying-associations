@@ -5,6 +5,8 @@
 #
 #   Person.create(first_name: 'Eric', last_name: 'Kelly')
 require 'faker'
+require_relative '../app/models/recipe'
+require_relative '../app/models/comment'
 
 TITLES = ["Roasted Brussels Sprouts",
   "Fresh Brussels Sprouts Soup",
@@ -35,7 +37,7 @@ end
 
 def make_comment
   comment = []
-  (rand(2)+1).times do
+  (rand(1)+1).times do
     comment << "#{FAKESTUFF.sample}"
   end
   comment.join(" ")

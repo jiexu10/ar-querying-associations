@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20151207194951) do
 
   create_table "recipes", force: :cascade do |t|
     t.string   "title",       null: false
+    t.string   "servings"
     t.text     "ingredients", null: false
     t.text     "steps",       null: false
     t.datetime "created_at",  null: false
